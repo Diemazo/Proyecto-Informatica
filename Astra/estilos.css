@@ -321,6 +321,10 @@ span {
         display: initial;
     }
 
+    .navbar{
+        transition: 2s;
+    }
+    
     .menu .navbar {
         background-color: #292933;
         position: absolute;

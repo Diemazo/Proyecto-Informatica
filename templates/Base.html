@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename= 'Src/CSS/estilos.css')}}" >
+    <link rel="stylesheet" href="{{url_for('static', filename= 'Src/CSS/nav.css')}}">
+    {% block head %}
+    {% endblock %}
+</head>
+<body>
+    
+
+<header class="header">
+    <div class="menu container">
+        <a href="#" class="logo">Dago+</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+        <img src="{{url_for('static', filename='imagenes/icono de menu.png')}}" class="menu-icono" alt="">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" id="Inicio" onclick="window.scroll (0,600)">Inicio</a></li>
+                <li><a href="#" id="Productos" onclick="window.scroll (0,2000)">Productos</a></li>
+                <li><a href="#" id="Servicios" onclick="window.scroll (0,800)">Servicios</a></li>
+                <li><a href="#" id="Reservar" onclick=" window.scroll (0,900)">Reservaciones</a></li>
+                <li><a href="#" id="Contacto" onclick=" window.scroll (0,8000)">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Tiene<br><span>hambre?</span></h1>
+                <p>
+                    Tenemos los mejores servicios de delivery en comida, 
+                    de todo tipo desde hamburguesa hasta sushi, solo 
+                    debe contactarnos y pedir lo que usted necesite.
+                </p>
+                <div class="buttons">
+                    <a href="#"  class="btn-1" id="Pide" onclick="window.scroll (0,600)">Pide ahora</a>
+                    <a href="#" class="btn-1" id="Observar" onclick="window.scroll (0,2000)">Observar menu</a>
+                </div>
+            </div>
+            <div class="header-imagen">
+                <img src="{{url_for('static', filename= 'imagenes/right.png')}}" alt="">
+            </div>
+        </div>
+</header>
+        {%block body%}
+        {% endblock %}
+  
+
+ <footer class="footer">
+    <div class="footer-content container">
+        <div class="link">
+            <h3>&copy; Dago+ 2023 | Todos los derecho reservados</h3>
+            <ul>
+                <li><a href="#">Contactos</a></li>
+                <li><a href="#">Metodos de Pago</a></li>
+                <li><a href="#">Recorrido</a></li>
+                <li><a href="#">Personal</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <ul>
+                <h4>Redes sociales</h4>
+                <li><a href="#">Intagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Tik tok</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <ul>
+                <h4>Comunidad de +Dago</h4>
+                <li><a href="#">Comunidad</a></li>
+                <li><a href="#">Soporte</a></li>
+                <li><a href="#">Ayuda</a></li>
+                <li><a href="#">Comentarios</a></li>
+            </ul>
+        </div>
+        <div class="link">
+            <ul>
+                <h4>Trabajo</h4>
+                <li><a href="#">Necesitas trabajo</a></li>
+                <li><a href="#">¿Quieres trabajar aqui?</a></li>
+                <li><a href="#">Requisitos para delivery</a></li>
+                <li><a href="#">Contactanos para trabajo</a></li>
+            </ul>
+        </div>
+    </div>
+ </footer>
+</body>
+</html>

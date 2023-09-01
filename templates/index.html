@@ -1,56 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="estilos.css" >
-    <link rel="stylesheet" href="nav.css">
-</head>
-<body>
-    
+{% extends "Base.html" %}
 
-<header class="header">
-    <div class="menu container">
-        <a href="#" class="logo">+Dago</a>
-        <input type="checkbox" id="menu" />
-        <label for="menu">
-            <img src="imagenes/menu.png" class="menu-icono" alt="">
-        </label>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#" id="Inicio" onclick="window.scroll (0,600)">Inicio</a></li>
-                <li><a href="#" id="Productos" onclick="window.scroll (0,2000)">Productos</a></li>
-                <li><a href="#" id="Servicios" onclick="window.scroll (0,800)">Servicios</a></li>
-                <li><a href="#" id="Reservar" onclick=" window.scroll (0,900)">Reservaciones</a></li>
-                <li><a href="#" id="Contacto" onclick=" window.scroll (0,8000)">Contacto</a></li>
-            </ul>
-        </nav>
-    </div>
-     <div class="header-content container">
-        <div class="header-txt">
-            <h1>Tiene<br><span>hambre?</span></h1>
-            <p>
-                Tenemos los mejores servicios de delivery en comida, 
-                de todo tipo desde hamburguesa hasta sushi, solo 
-                debe contactarnos y pedir lo que usted necesite.
-            </p>
-            <div class="buttons">
-                <a href="#"  class="btn-1" id="Pide" onclick="window.scroll (0,600)">Pide ahora</a>
-                <a href="#" class="btn-1" id="Observar" onclick="window.scroll (0,2000)">Observar menu</a>
-            </div>
-        </div>
-        <div class="header-imagen">
-            <img src="imagenes/right.png" alt="">
-        </div>
-     </div>
-</header>
+{% block body %}
 
+ 
 <section class="menu-pl container">
     <h2>Nuestros mejores <span>platos</span></h2>
     <div class="general-content">
         <div class="general-txt">
-            <img src="imagenes/5-platillos-que-han-revolucionado-la-comida-en-el-mundo-.jpg" alt="">
+            <img src="{{url_for('static', filename= 'imagenes/5-platillos-que-han-revolucionado-la-comida-en-el-mundo-.jpg')}}" alt="">
             <h3> Pasta con Camarones</h3>
             <p>
                 El plato mas pedido de toda nuestra pagina web, pasta importada de Italia,
@@ -62,7 +19,7 @@
             </div>
         </div>
         <div class="general-txt">
-            <img src="imagenes/590866de-13ee-43ef-8144-548a3ad894f1_16-9-aspect-ratio_default_0.jpg" alt="">
+            <img src="{{url_for('static', filename= 'imagenes/590866de-13ee-43ef-8144-548a3ad894f1_16-9-aspect-ratio_default_0.jpg')}}" alt="">
             <h3> Superburguer</h3>
             <p>
                 Uno de los mas pedidos,la hamburguesa esta hecha con 400gr de carne,lechuga,
@@ -75,7 +32,7 @@
             </div>
         </div>
               <div class="general-txt">
-            <img src="imagenes/pizza.jpg"alt="">
+            <img src="{{url_for('static', filename= 'imagenes/pizza.jpg')}}"alt="">
             <h3> Pizza con Peperoni</h3>
             <p>
              La pizza con Peperoni un clasico italiano y de la comida rapida, esta hecha
@@ -105,7 +62,7 @@
             </div>
         </div>
         <div class="about-img">
-            <img src="imagenes/traditional-delicious-fresh-sushi-roll-set-on-a-white-background-free-photo-removebg.png" alt="">
+            <img src="{{url_for('static', filename= 'imagenes/traditional-delicious-fresh-sushi-roll-set-on-a-white-background-free-photo-removebg.png')}}" alt="">
         </div>
     </div>
 </section>
@@ -114,7 +71,7 @@
     <h2>Nuestros <span>menu</span></h2>
     <div class="general-content ">
         <div class="general-txt">
-            <img src="imagenes/5-platillos-que-han-revolucionado-la-comida-en-el-mundo-.jpg" alt="">
+            <img src="{{url_for('static', filename= 'imagenes/5-platillos-que-han-revolucionado-la-comida-en-el-mundo-.jpg')}}" alt="">
             <h3> Pasta con Camarones</h3>
             <p>
                 El plato mas pedido de toda nuestra pagina web, pasta importada de Italia,
@@ -126,7 +83,7 @@
             </div>
         </div>
         <div class="general-txt">
-            <img src="imagenes/590866de-13ee-43ef-8144-548a3ad894f1_16-9-aspect-ratio_default_0.jpg" alt="">
+            <img src="{{url_for('static', filename= 'imagenes/590866de-13ee-43ef-8144-548a3ad894f1_16-9-aspect-ratio_default_0.jpg')}}" alt="">
             <h3> Superburguer</h3>
             <p>
                 Uno de los mas pedidos, la hamburguesa esta hecha con 400gr de carne, lechuga,
@@ -138,7 +95,7 @@
             </div>
         </div>
               <div class="general-txt">
-                    <img src="imagenes/pizza.jpg"alt="">
+                    <img src="{{url_for('static', filename= 'imagenes/pizza.jpg')}}"alt="">
                     <h3> Pizza con Peperoni</h3>
                     <p>
                        La pizza con Peperoni un clasico italiano y de la comida rapida, esta hecha
@@ -150,7 +107,7 @@
                     </div>
             </div>
             <div class="general-txt">
-                <img src="imagenes/pollo-frito.jpg.crdownload"alt="">
+                <img src="{{url_for('static', filename= 'imagenes/pollo-frito.jpg.crdownload')}}"alt="">
                 <h3> Pollo a la Broaster</h3>
                 <p>
                    El pollo a la broaster tradicional donde se rebosa el pollo en harina, luego 
@@ -162,7 +119,7 @@
                 </div>
            </div>
            <div class="general-txt">
-            <img src="imagenes/f1280x720-19067_150742_5638.jpg"alt="">
+            <img src="{{url_for('static', filename= 'imagenes/f1280x720-19067_150742_5638.jpg')}}"alt="">
             <h3>Arroz Chino Venezolano</h3>
             <p>
                Arroz Chino Venezola donde se frie el arroz con la salsa de soja,
@@ -175,7 +132,7 @@
              </div>
           </div>
           <div class="general-txt">
-            <img src="imagenes/375811-sepik.jpg"alt="">
+            <img src="{{url_for('static', filename= 'imagenes/375811-sepik.jpg')}}"alt="">
             <h3>Panini con difentes contornos</h3>
             <p>
                Panini con diferentes contornos que se añaden al gusto del cliente,
@@ -192,7 +149,7 @@
 
 <section class="info container">
     <div class="info-imagen">
-        <img src="imagenes/201835673-muestra-de-platillos-de-comida-rápida-internacional-cada-uno-único-y-sabroso-creado-con-ai.jpg" alt="">
+        <img src="{{url_for('static', filename= 'imagenes/201835673-muestra-de-platillos-de-comida-rápida-internacional-cada-uno-único-y-sabroso-creado-con-ai.jpg')}}" alt="">
     </div>
     <div class="info-txt">
 
@@ -207,46 +164,4 @@
         <a href="#" class="btn-1">Informacion</a>
     </div>
 </section>
-
- <footer class="footer">
-    <div class="footer-content container">
-        <div class="link">
-            <h3>&copy; Dago+ 2023 | Todos los derecho reservados</h3>
-            <ul>
-                <li><a href="#">Contactos</a></li>
-                <li><a href="#">Metodos de Pago</a></li>
-                <li><a href="#">Recorrido</a></li>
-                <li><a href="#">Personal</a></li>
-            </ul>
-        </div>
-        <div class="link">
-            <ul>
-                <h4>Redes sociales</h4>
-                <li><a href="#">Intagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Tik tok</a></li>
-            </ul>
-        </div>
-        <div class="link">
-            <ul>
-                <h4>Comunidad de +Dago</h4>
-                <li><a href="#">Comunidad</a></li>
-                <li><a href="#">Soporte</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li><a href="#">Comentarios</a></li>
-            </ul>
-        </div>
-        <div class="link">
-            <ul>
-                <h4>Trabajo</h4>
-                <li><a href="#">Necesitas trabajo</a></li>
-                <li><a href="#">¿Quieres trabajar aqui?</a></li>
-                <li><a href="#">Requisitos para delivery</a></li>
-                <li><a href="#">Contactanos para trabajo</a></li>
-            </ul>
-        </div>
-    </div>
- </footer>
-</body>
-</html>
+{% endblock %}

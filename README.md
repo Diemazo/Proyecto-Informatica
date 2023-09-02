@@ -1,4 +1,4 @@
-# Proyecto-Informatica
+# Dago+
 Dago+ es una pagina web centrada en el ofrecimiento de servicios de delivery especificamente de comida, donde contamos con un menù lleno de varias opciones que hacen nuestro usuarios se sientan mas còmodos al elegir a su gusto lo que deseen comer, cabe destacar que nuestros servicios estan repartidos por la gran mayorìa de las zonas de nuestro pais. Nuestro personal esta altamente recomendado y capacitado para cumplir con lo que el usuario demande. Por ùltimo, debemos resaltar que somos una empresa con màs de 5 años de experiencia en este mercado de los delivery de comida y que seguirà ofreciendo este tipo de  servicios en este mercado tan amplio.
 
 ![image](https://github.com/Diemazo/Proyecto-Informatica/assets/141435863/10e0845f-a3e7-43da-8c2c-f11a68df19d5)
